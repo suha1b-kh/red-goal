@@ -17,7 +17,7 @@ h2 {
 .arrow {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(150%);
     background-color: var(--grey);
     border-radius: 50%;
     width: 40px;
