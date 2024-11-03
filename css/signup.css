@@ -1,0 +1,141 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.logo {
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.signup-form {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.signup-photo {
+    width: 40%;
+    aspect-ratio: 16 / 14;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+
+.signup-photo img {
+    width: 100%;
+}
+
+.signup-form form {
+    padding: 10rem 0;
+}
+
+.signup-form form h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.signup-form form p {
+    padding: 1rem 0;
+}
+
+.signup-form form input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    transition: border-color 0.7s ease;
+}
+
+.signup-form form input:focus {
+    border: 2px solid var(--red);
+    outline: none;
+}
+
+.signup-form form .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.signup-form form .buttons button {
+    padding: 1rem 3rem;
+    margin: 0 1rem;
+    border: none;
+    background-color: var(--red);
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.signup-form form .buttons button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.signup-form form .buttons button:hover {
+    border: 3px solid var(--red);
+    background-color: transparent;
+    color: var(--red);
+    animation: borderColorChange 1s ease infinite;
+}
+
+.signup-form form .buttons button:hover a {
+    color: var(--red);
+}
+
+
+@keyframes borderColorChange {
+    0% {
+        border-color: var(--red);
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: var(--red);
+    }
+}
+
+.signup-form form .buttons .register {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.signup-form form .buttons .register a {
+    color: var(--red);
+}
+
+@media (max-width: 950px) {
+    .signup-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .signup-photo {
+        width: 80%;
+        aspect-ratio: 12 / 14;
+        margin-bottom: 0;
+    }
+
+    .signup-form form {
+        padding: 1rem 2rem;
+    }
+
+    .signup-form form .buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
